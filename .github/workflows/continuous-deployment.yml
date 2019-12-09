@@ -9,7 +9,6 @@ on:
       deploy:
         name: Deploy
         runs-on: ubuntu-latest
-
       env:
         SOURCE_DIR: "build/"
         AWS_REGION: "ap-northeast-2"
@@ -18,7 +17,7 @@ on:
 
       steps:
         - uses: actions/checkout@v1
-
+          -
         - name: Install dependencies
           run: yarn
 
