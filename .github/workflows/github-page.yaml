@@ -5,6 +5,11 @@
        - master
  jobs:
    build-and-deploy:
+#      strategy:
+#        matrix:
+#          os: [ubuntu-latest, windows-latest, macOS-latest]
+    # runs-on: ubuntu-latest
+#      runs-on: ${{ matrix.os }} # 使用的 OS
      runs-on: ubuntu-latest
      steps:
        - name: Checkout
